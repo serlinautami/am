@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>konten</title>
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="content-wrapper">
+  <header class="header header--bg">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">Tugas</a>
+        </div>
+      </nav>
+        <center><h2>Form Sederhana HTML</h2>
+                <p>Input Form Data</p>
+        </center>
+       <form action="" method="post" >
+        <table class="table" border="1">
+          <center>
+            <th>
+            <tr>
+              <td>
+                  <ul>
+                    <li>nama   :<input type="text" name="nama" id="nama" ></li><br/>
+                    <li>alamat :<input type="text" name="alamat" id="alamat"></li><br/>
+                    <li>gambar :<input type="file" class="form-control" name="gambar"></li><br/>
+                    <li>
+                      Jenis Kelamin : </br>
+                      <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="laki-laki" checked />
+                      Laki - Laki </br>
+                      <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="perempuan" />
+                      Perempuan
+                    </li>
+                <br/>
+                 
+                <li>
+                  Hobi: </br>
+                    <input type="checkbox" name="hobi" id="hobi" value="membaca buku" checked/> Membaca Buku</br>
+                      <input type="checkbox" name="hobi" id="hobi" value="menulis" /> Menulis
+                    </br>
+                      <input type="checkbox" name="hobi" id="hobi" value="masak" /> Memasak
+                </li><br/>
+                <li>
+                  Asal Kota:<br/>
+                 <select name="kota" >
+                     <option id="kota" name="kota" value="Kota Jakarta">Jakarta</option></br>
+                     <option id="kota" name="kota" value="Kota Bandung">Bandung</option></br>
+                     <option id="kota" name="kota" value="Kota Lampung" selected>Lampung</option>
+                 </select>
+                </li><br/>
+                 
+                <li>
+                  Komentar Anda:<br/>
+                  <textarea name="komentar" id="komentar" rows="5" cols="20"></textarea><br/>
+                </li><br/>
+                 
+                  <input class="btn" type="submit" value="Tambah">
+                </ul>
+              </td>
+            </tr>
+          </th>
+        </center>
+        </table>
+       </form>
+</div>
+  </header>
+  <footer class="footer footer--bg">
+    <div class="container text-center">
+      <h1 class="footer__title">chey</h1>
+      <ul class="footer__contact-information">
+        <li><a href="tel:5555555555"><i class="material-icons">phone</i> +628176959429</a></li>
+        <li><a href="mailto:serlinautami938@gmail.com"><i class="material-icons">email</i> serlinautami93@gmail.com</a></li>
+        <li><a href="#"><i class="material-icons">location_on</i> Tangerang</a></li>
+      </ul>
+    </div>
+    <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
+    <div class="container text-center">
+      <div class="social-icon">
+        <ul>
+          <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__paragraph">Copyright &copy; 2019 serlina utami, All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/mixitup.js"></script>
+
+  <script>
+    $('a').click(function(e)
+      {
+        e.preventDefault();
+      });
+
+    // calling mixitup
+    var mixer = mixitup(".tugas");
+  </script>
+</body>
+</html>  
