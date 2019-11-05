@@ -17,3 +17,9 @@ var beratBadan = 50.12;
 console.log(typeof []);
 var number = [1,2,3,4,5,6];
   console.log(typeof number);
+
+
+  let buah =['banana','apel','manggo'];
+for (c in buah){
+	console.log(buah['c']);
+}
