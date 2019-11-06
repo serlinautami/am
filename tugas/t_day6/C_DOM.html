@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<body>
+<p>Enter dan click OK:</p>
+<input id="ser" type="text" min="5" max="10">
+<button onclick="myFunction()">OK</button>
+
+<p>number min 5 dan max 10.</p>
+
+<p id="go"></p>
+
+<script>
+function myFunction( ) {
+    var inpObj = document.getElementById("ser");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("go").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("go").innerHTML = "Input OK banget";
+    } 
+} 
+</script>
+</body>
+</html>
