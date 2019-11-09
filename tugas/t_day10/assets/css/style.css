@@ -1,0 +1,15 @@
+body{
+		font-family:  Verdana, Genava, Tahona, sans-serif;
+		background-color: pink;
+		padding: 50px;
+		color: darkolivegreen;
+	}
+p {
+	text-align: center;
+	color: blue;
+}
+
+h1, h2{
+	text-align: center;
+	color: red;
+}
